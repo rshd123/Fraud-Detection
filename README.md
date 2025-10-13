@@ -60,15 +60,16 @@ This project solves that by building an **adaptive, real-time learning system** 
 
 The framework is based on **Reinforcement Learning with Upper Confidence Bound (UCB)** logic:
 
-\[
-a_t = \arg\max_a \left( \hat{\mu}_a + \alpha \sqrt{\frac{2\ln t}{n_a}} \right)
-\]
+![equation](https://latex.codecogs.com/svg.image?\color{White}a_t%20=%20\arg\max_a%20\left(%20\hat{\mu}_a%20+%20\alpha%20\sqrt{\frac{2\ln%20t}{n_a}}%20\right))
+
+
 
 where:
-- \( a_t \) = chosen model (arm) at time *t*  
-- \( \hat{\mu}_a \) = estimated reward (performance) of arm *a*  
-- \( n_a \) = number of times arm *a* has been selected  
-- \( \alpha \) = exploration-exploitation constant
+
+- ![equation](https://latex.codecogs.com/svg.image?\bg_black\color{White}a_t) = chosen model (arm) at time *t*  
+- ![equation](https://latex.codecogs.com/svg.image?\bg_black\color{White}\hat{\mu}_a) = estimated reward (performance) of arm *a*  
+- ![equation](https://latex.codecogs.com/svg.image?\bg_black\color{White}n_a) = number of times arm *a* has been selected  
+- ![equation](https://latex.codecogs.com/svg.image?\bg_black\color{White}\alpha) = exploration–exploitation constant
 
 ---
 
